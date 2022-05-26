@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const {container} = require("../di-setup.js");
+const { container } = require("../di-setup.js");
 
 // Routes
-router.get("/",container.resolve('bookController').getBooks);
+router.get("/", container.resolve("bookController").getBooks);
 
 module.exports = router;
