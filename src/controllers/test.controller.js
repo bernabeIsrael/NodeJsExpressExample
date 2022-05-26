@@ -1,5 +1,5 @@
 
-export async function test(req, res) {
+async function test(req, res) {
     try {
         const response = {
             ok: true
@@ -9,3 +9,5 @@ export async function test(req, res) {
         return res.status(500).json({ message: error.message });
     }
 }
+
+module.exports = test;
