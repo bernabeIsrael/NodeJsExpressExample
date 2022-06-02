@@ -1,6 +1,6 @@
-class BookPostgresRepository {
-  constructor() {}
+const BookRepositoryInterface = require('./book.repository.interface');
 
+class BookPostgresRepository extends BookRepositoryInterface{
   getBooks() {
     return new Promise((resolve, reject) => {
       let books = [

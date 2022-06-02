@@ -1,5 +1,5 @@
 const awilix = require("awilix");
-const BookRepository = require("./repositories/book.repository.js");
+const BookRepository = require("./repositories/Book/book.repository.sequelize");
 const BookController = require("./controllers/book.controller.js");
 
 const container = awilix.createContainer({
