@@ -2,9 +2,12 @@ const awilix = require("awilix");
 const BookRepository = require("./repositories/Book/book.repository.sequelize");
 const BookController = require("./controllers/book.controller.js");
 
+const enviroment  = process.env.enviroment;
+
 const container = awilix.createContainer({
   injectionMode: awilix.InjectionMode.PROXY,
 });
+
 
 function setup() {
   container.register({
