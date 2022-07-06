@@ -1,7 +1,7 @@
-const BookSequelize = require("./models/Book");
-const Book = require("../../../domain/Book");
+const BookSequelize = require("../../infrastructure/persistence/sequelize/models/Book.sequelize");
+const Book = require("../../domain/Book");
 
-const BookRepositoryInterface = require("../../../repositories/Book/book.repository.interface");
+const BookRepositoryInterface = require("./book.repository.interface");
 
 class BookSequelizeRepository extends BookRepositoryInterface {
   /*

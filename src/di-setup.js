@@ -1,5 +1,5 @@
 const awilix = require("awilix");
-const BookRepository = require("./infrastructure/persistence/sequelize/book.repository.sequelize");
+const BookRepository = require("./repositories/Book/book.repository.sequelize");
 const BookController = require("./controllers/book.controller.js");
 
 const enviroment  = process.env.enviroment;
